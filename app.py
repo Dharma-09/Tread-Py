@@ -86,7 +86,7 @@ x_test,y_test = np.array(x_test),np.array(y_test)
 y_predicted = model.predict(x_test)
 scaler = scaler.scale_
 
-scale_factor = 1/[0]
+scale_factor = 1/scaler[0]
 y_predicted = y_predicted * scale_factor
 y_test = y_test * scale_factor
 
